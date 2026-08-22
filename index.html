@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shah Meaze</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png?v=20260807" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260807" />
+    <link rel="shortcut icon" href="/favicon.ico?v=20260807" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260807" />
+    <meta name="apple-mobile-web-app-title" content="Shahmaze" />
+    <link rel="manifest" href="/site.webmanifest?v=20260807" />
+</head>
+
+<body>
+    <!-- header start  -->
+    <header>
+        <div id="navbar">
+            <img src="./img/logo-removebg-preview.png" alt="logo shah Meaze">
+        </div>
+        <div id="houm" class="content">
+            <h1>خوش امدید به روستوران <span class="primary-text">شاه مزه</span></h1>
+            <p>عاشقان غذا خوش امدید در اینجا می توانید خوش مزه ترین غذا دنیا پیدا کنید</p>
+            <a href="#contact" class="btn btn-primary">رزرو میز</a>
+        </div>
+    </header>
+    <!-- header End  -->
+    <!-- جایگزین بخش nav فعلی -->
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#houm">خانه</a></li>
+            <li><a href="#About">درباره ماه</a></li>
+            <li><a href="#offers">تخفیف ها</a></li>
+            <li><a href="#menu">منو</a></li>
+            <li><a href="#gallery">عکس ها</a></li>
+            <li><a href="#contact">رزرو و تماس</a></li>
+        </ul>
+    </nav>
+    
+    <!-- About start -->
+    <main>
+        <section id="About">
+            <div class="container">
+                <div class="title">
+                    <h2>درباره  شاه مزه </h2>
+                    <P>بیشتر از25 سال سابقه</P>
+                </div>
+                <div class="about-content">
+                    <div>                        
+                        <p>شاه‌مزه، فراتر از یک نام، داستانی از عشق به غذاست. با بیش از ۲۵ سال تجربه در هنر آشپزی، ما هر روز با استفاده از تازه‌ترین مواد اولیه، طعم‌های اصیل را به سفره شما می‌آوریم تا تجربه‌ای فراموش‌نشدنی بسازیم</p>
+
+                        <p>گروه رستوران‌های شاه‌مزه با بیش از ربع قرن سابقه درخشان، پیشگام در ارائه غذاهای باکیفیت و استاندارد است. تمرکز ما بر حفظ اصالت دستور پخت‌ها و رضایت حداکثری مشتریان، رمز موفقیت ۲۵ ساله ماست</p>
+                        <a href="#" class="btn btn-secondary">بیشتر بدانید </a>
+                    </div>
+                    <img src="./img/about_img.png" alt="about">
+                </div>
+            </div>
+        </section>
+        <!-- About end -->
+        <!-- offers start -->
+        <section id="offers">
+            <div class="container">
+                <div class="title">
+                    <h2>تخفیف های امروز روستوران شاه مزه</h2>
+                    <P>بیشتر از 25 سال سابقه</P>
+                </div>
+                <div class="offers-items">
+                    <div>
+
+                        <img src="./img/offer1.png" alt="passta">
+                        <div>
+                            <h3>پاستا چهار پنیری</h3>
+                            <p><del class="price">250.000t</del> => <span class="primary-text">135.000t</span></p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="./img/offer2.png" alt="vegertarian passta">
+                        <div>
+                            <h3>پاستای سبزیجات</h3>
+                            <p><del class="price">220.000t</del> => <span class="primary-text">100.000t</span></p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="./img/offer3.png" alt="gluten-free passta">
+                        <div>
+                            <h3>پاستای بدون گلوتن</h3>
+                            <p><del class="price">230.000t</del> => <span class="primary-text">110.000t</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- offers end -->
+        <!-- menu start -->
+        <section id="menu">
+            <div class="container">
+                <div class="title">
+                    <h2>منو روستوران شاه‌مزه</h2>
+                    <p> دوتا سفارش بدین سومی رایگان</p>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item-left">
+
+                        <div class="menu-item">
+                            <img src="./img/food1.png" alt="LASAL CHEESE">
+                            <div>
+                                <h3>پنیر لازال مخصوص <span class="primary-text">۱۸۰,۰۰۰ تومان</span></h3>
+                                <p>پنیر گریل شده ویژه، روغن زیتون فرابکر، سبزیجات معطر و نان تست سیردار.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <img src="./img/food2.png" alt="JUMBO CRAB SHRIMP">
+                            <div>
+                                <h3>میگو جامبو سوخاری <span class="primary-text">۴۵۰,۰۰۰ تومان</span></h3>
+                                <p>میگوی تازه جنوب، پودر سوخاری پانکو، سس تارتار دست‌ساز و لیمو ترش.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <img src="./img/food3.png" alt="KOKTAIL JUCIE">
+                            <div>
+                                <h3>کوکتل میوه استوایی <span class="primary-text">۹۵,۰۰۰ تومان</span></h3>
+                                <p>ترکیب آب‌میوه‌های طبیعی فصل، تکه‌های انبه، آناناس و نعنای تازه.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <img src="./img/food4.png" alt="CAPO STEAK">
+                            <div>
+                                <h3>استیک کاپو (ویژه) <span class="primary-text">۸۵۰,۰۰۰ تومان</span></h3>
+                                <p>   فیله گوساله تازه، سس قارچ مخصوص، سیب‌زمینی تنوری و دورچین سبزیجات  (۳۰۰)  گرم</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <img src="./img/food5.png" alt="ORGANIC FRUIT SALAD">
+                            <div>
+                                <h3>سالاد میوه ارگانیک <span class="primary-text">۱۲۰,۰۰۰ تومان</span></h3>
+                                <p>مجموعه‌ای از میوه‌های نوبرانه، عسل طبیعی، مغز گردو و دانه‌های چیا.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <img src="./img/food6.png" alt="CHEESE PIZZA">
+                            <div>
+                                <h3>پیتزا پنیر کلاسیک <span class="primary-text">۲۲۰,۰۰۰ تومان</span></h3>
+                                <p>پنیر موزارلای کشدار، سس گوجه‌فرنگی ایتالیایی، اورگانو و ریحان تازه.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="menu-item-right">
+
+                        <div class="menu-item">
+                            <img src="./img/food7.jpeg" alt="KOFTA MEAT">
+                            <div>
+                                <h3>کوفته گوشت عربی <span class="primary-text">۳۸۰,۰۰۰ تومان</span></h3>
+                                <p>گوشت گوسفندی تازه، ادویه‌های اصیل، جعفری و سس ارده مخصوص.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/food8.jpeg" alt="SPANISH PIES">
+                            <div>
+                                <h3>پای اسفناج اسپانیایی <span class="primary-text">۱۶۰,۰۰۰ تومان</span></h3>
+                                <p>خمیر ترد، اسفناج تفت داده شده با سیر، پنیر فتا و گردو.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/food9.jpeg" alt="CHEESE TOST">
+                            <div>
+                                <h3>تست پنیری مخصوص <span class="primary-text">۹۰,۰۰۰ تومان</span></h3>
+                                <p>نان تست کره‌ای، پنیر گودا، ژامبون گوشت (اختیاری) و گوجه گیلاسی.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/food10.jpeg" alt="FRUIT SALAD">
+                            <div>
+                                <h3>سالاد میوه دسر <span class="primary-text">۱۱۰,۰۰۰ تومان</span></h3>
+                                <p>ترکیبی از ملون، توت‌فرنگی و انگور با سس انار ملس.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/food11.jpeg" alt="CHICKEN SHAWARMA">
+                            <div>
+                                <h3>شاورما مرغ لبنانی <span class="primary-text">۲۴۰,۰۰۰ تومان</span></h3>
+                                <p>فیله مرغ طعم‌دار شده، سس سیر، خیارشور، کاهو و گوجه در نان پیتا.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/food12.jpeg" alt="MEGA CHEESE PIZZA">
+                            <div>
+                                <h3>پیتزا پنیر مگا (خانوادگی) <span class="primary-text">۴۲۰,۰۰۰ تومان</span></h3>
+                                <p>پنیر دابل موزارلا، پارمزان، سس مارینارا، زیتون و قارچ اسلایس شده.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <button class="btn">دیدن منو</button>
+            </div>
+        </section>
+        <!-- menu end -->
+        <!-- daytime start -->
+        <section id="daytime">
+            <div class="container">
+                <div class="daytime-items">
+
+                    <div class="daytime-item">
+                        <img src="./img/breckfastIcon.png" alt="breckfast">
+                        <h3>صبحانه</h3>
+                        <p> 8:00 , 10:00</p>
+                    </div>
+
+                    <div class="daytime-item">
+                        <img src="./img/lunchIcon.png" alt="lunch">
+                        <h3>عصرونه</h3>
+                        <p> 16:00 , 19:00</p>
+                    </div>
+
+                    <div class="daytime-item">
+                        <img src="./img/dinnerIcon.png" alt="dinner">
+                        <h3>شام </h3>
+                        <p> 21:00 , 01:00</p>
+                    </div>
+
+                    <div class="daytime-item">
+                        <img src="./img/dessertIcon.png" alt="dessert">
+                        <h3> بستی</h3>
+                        <p> کل روز</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- daytime end -->
+        <!-- gallary start -->
+        <section id="gallery">
+            <div class="container">
+                <h2>عکس های شما</h2>
+                <div class="gallery-img">
+                    <img src="./img/gallery1.jpeg" alt="gallary1">
+                    <img src="./img/gallery2.jpeg" alt="gallary2">
+                    <img src="./img/gallery3.jpeg" alt="gallary3">
+                    <img src="./img/gallery4.jpeg" alt="gallary4">
+                    <img src="./img/gallery5.jpeg" alt="gallary5">
+                    <img src="./img/gallery6.jpeg" alt="gallary6">
+                </div>
+            </div>
+        </section>
+        <!-- gallery end -->
+        <!-- contact start -->
+        <section id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        
+                        <div>
+                            <h3>ارتباط با ما</h3>
+                            <p><i class="fa-solid fa-location-dot"></i> لین یک پیش پاساز جزیره تیمبو </p>
+                            <p><i class="fa-solid fa-phone"></i>  0902 0000 0000</p>
+                            <p><i class="fa-regular fa-envelope"></i> پشتبانی : shahmaze@gmail.com</p>
+                        </div>
+                        
+                        <div>
+                            <h3>ساعات کاری </h3>
+                            <p>8:00 , 14:00 </p>
+                            <p>17:00 , 01:00 </p>
+                        </div>
+
+                        <div>
+                            <h3>مارو در اینجا دنبال کنید</h3>
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                    </div>
+                    <form>
+                        <input type="text" name="name" id="name" placeholder="full name" required>
+                        <input type="email" name="email" id="email" placeholder="email address" required>
+                        <input type="text" name="subject" id="subject" placeholder="subject" required>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="message"></textarea>
+                        <button type="submit" class="btn">ثبت سفارش یا رزرو میز</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- contact end -->
+    </main>
+    <footer id="footer">
+        <p> copyright &copy; 2026 all rights reserved | Made by <b><a href="https://github.com/salhyalirza-sudo/html_wab" target="_blank">alireza salhy</a></b> </p>
+    </footer>
+</body>
+
+</html> 

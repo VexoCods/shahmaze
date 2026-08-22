@@ -1,0 +1,796 @@
+/* Thin:100
+   Light:300
+   Regular:400
+   Bold:700
+   Black:900 */
+@font-face {
+    font-family: "vazir";
+    src: url(./font/Vazir-Bold-FD-WOL.eot) format("eot");
+    src: url(./font/Vazir-Bold-FD-WOL.ttf) format("ttf");
+    src: url(./font/Vazir-Bold-FD-WOL.woff) format("woff");
+    src: url(./font/Vazir-Bold-FD-WOL.woff2) format("woff2");
+    font-weight: 700;
+
+}
+
+@font-face {
+    font-family:"vazir";
+    src: url(./font/Vazir-Medium-FD-WOL.eot)format("eot");
+    src: url(./font/Vazir-Medium-FD-WOL.ttf)format("ttf");
+    src: url(./font/Vazir-Medium-FD-WOL.woff)format("woff");
+    src: url(./font/Vazir-Medium-FD-WOL.woff2)format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url(./font/Vazir-Light-FD-WOL.eot) format("eot");
+    src: url(./font/Vazir-Light-FD-WOL.ttf) format("ttf");
+    src: url(./font/Vazir-Light-FD-WOL.woff) format("woff");
+    src: url(./font/Vazir-Light-FD-WOL.woff2) format("woff2");
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: "vazir";
+    src: url(./font/Vazir-Thin-FD-WOL.eot) format("eot");
+    src: url(./font/Vazir-Thin-FD-WOL.ttf) format("ttf");
+    src: url(./font/Vazir-Thin-FD-WOL.woff) format("woff");
+    src: url(./font/Vazir-Thin-FD-WOL.woff2) format("woff2");
+    font-weight: 100;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "vazir";
+}
+
+ ul {
+    list-style: none;
+ }
+
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* utility classes */
+.btn-meun {
+    color: #fff;
+}
+
+.primary-text {
+    color: rgb(255, 187, 0);
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border:none;
+    border-radius: 15px;
+
+}
+
+.btn-secondary {
+    color: #fff;
+    background: #062c66;
+    margin-top: 1.8rem;
+}
+
+.btn-secondary:hover {
+    background-color: #ffbb00;
+}
+
+.btn-primary {
+    color: #fff;
+    border: 1px solid rgb(247, 247, 247);
+}
+
+ 
+.btn-primary:hover{
+    background: #fcd008 ;
+}
+
+/* header start */
+header {
+ height: 100vh;
+ background: url("./img/home_bg.jpeg" ) center center/cover no-repeat;
+ position: relative;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+#navbar img {
+    width: 60px;
+    margin-left: 10px;
+}
+
+#navbar ul {
+    display: flex;
+    margin-right: 100px;
+}
+
+#navbar ul li a {
+    padding: 15px 20px;
+    font-family: "vazir";
+    font-weight:400 ;
+    color: rgba(255, 255, 255, 0.952);
+}
+
+#navbar ul li a:hover {
+    border-bottom: 2px solid rgb(255, 217, 0)
+}
+
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+
+header .content h1 {
+    font-family: "vazir";
+    font-weight: 400;
+    font-size: 40px;
+    color: #fff;
+}
+
+header .content p {
+    font-family: "vazir";
+    margin: 16px 0px 40px;
+    color: rgb(255, 255, 255);
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.6);
+}
+
+header * {
+    z-index: 10;
+}
+/* header end */
+
+/* About start */
+
+#About {
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f0e6 ;
+}
+
+#About .title,
+#offers .title,
+#menu .title
+{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#About h2 {
+    font-family: "vazir";
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #062c66;
+}
+
+#About .title p {
+    font-family: "vazir";
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#Abou p {
+    font-family: "vazir";
+    font-weight: 400;   
+}
+
+#About .about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#About .about-content img {
+    width: 450px;
+    margin-top: -3.8rem;
+}
+
+#About .about-content p {
+    font-family: "vazir";
+    font-weight: 400;
+    line-height: 1.6;
+    margin-right: 6rem;
+}
+
+/* About end */
+
+/* offers start */
+#offers {
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+    background: url(./img/offer-background.jpg) center center/cover fixed ;
+    margin-bottom: 10px;
+}
+
+#offers h2, 
+#menu h2
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffbb00;
+}
+
+#offers .title p,
+#menu .title p 
+{
+    font-family: "vazir";
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #f5f0e6;
+}
+
+#offers .offers-items {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#offers .offers-items h3 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#offers .offers-items img {
+    width: 165px;
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+.price {
+    color: #fff; /* رنگ خودِ عدد را خاکستری نگه می‌داریم تا تمرکز روی قیمت جدید باشد */
+    text-decoration-color: red; /* این خط، رنگِ خودِ خطِ روی عدد را قرمز می‌کند */
+    font-size: 0.8em; /* معمولاً قیمت قدیمی را کمی کوچک‌تر می‌کنند */
+}
+
+
+#offers .offers-items span {
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 5px;
+}
+/* offers end */
+/* menu start */
+#menu {
+    /* رنگ این پس زمینه بعد از تاموم کار برگردون به قبلی این رنک (#f5f0e6) */
+    background: #f5f0e6;  
+    padding: 5rem 0rem;
+}
+
+#menu .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu .menu-items .menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+#menu .menu-items .menu-item img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#menu .menu-items .menu-item h3 {
+    color: #383848;
+    border-bottom: 1px solid #383848;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#menu .menu-items .menu-item span {
+    margin-right: 30px;
+}
+
+#menu .btn {
+    display: block;
+    margin: 20px auto 0px;
+    background-color: #ffbb00;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu .btn:hover {
+    background: #383848;
+}
+/* menu end */
+/* daytime start  */
+#daytime {
+    background: url(./img/daytime_bg.jpeg) center center/cover no-repeat fixed;
+    color: #fff;
+    text-align: center;
+}
+
+#daytime .daytime-items {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#daytime .daytime-items h3 {
+    font-size: 32px;
+    margin: 16px 0 10px;
+}
+
+#daytime .daytime-items p {
+
+    font-weight: 500;
+}
+
+#daytime .daytime-items img {
+    margin-top: 40px;
+}
+
+/* daytime end  */
+/* gallery start */
+
+#gallery{
+    height: 95vh;
+    padding: 8rem 0 6rem;
+    background: url(./img/offer-background.jpg) center center/cover no-repeat;
+}
+
+#gallery h2 {
+    font-size: 40px;
+    margin-top: -100px;
+    margin-bottom: 10px;
+    font-family: "vazir";
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+#gallery .gallery-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#gallery .gallery-img img {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+
+#gallery .gallery-img img:hover {
+    opacity: 1;
+}
+
+/* gallery end */
+/* contact start */
+
+#contact {
+    padding: 5rem 0rem;
+    background-color: #fff;
+}
+
+#contact .container {
+    max-width: 900px;
+}
+
+#contact .contact-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact .contact-content .contact-info {
+    width: 50%;
+}
+
+#contact .contact-content .contact-info h3 {
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10;
+}
+
+#contact .contact-content .contact-info div {
+    margin: 30px 0;
+    line-height: 1.7 ;
+}
+
+
+#contact .contact-content .contact-info p {
+    font-family: "vazir";
+    font-weight: 400;
+}
+
+#contact .contact-content .contact-info i {
+    color: rgb(255, 136, 0);
+    margin-right: 5px;
+}
+
+#contact .contact-content .contact-info a i {
+    color: #fff;
+    background: #383848;
+    font-size: 20px;
+    border-radius: 50%;
+    
+    /* بخش اصلی برای حل مشکل */
+    display: inline-flex;    /* استفاده از فلکس برای وسط‌چین کردن */
+    align-items: center;     /* وسط‌چین کردن عمودی */
+    justify-content: center;  /* وسط‌چین کردن افقی */
+    width: 50px;             /* عرض ثابت */
+    height: 50px;            /* ارتفاع ثابت (باید با عرض برابر باشد) */
+    
+    /* حذف مارجین‌های اضافی که ممکن است باعث جابجایی شوند */
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#contact .contact-content .contact-info a i:hover {
+    color: #383848;
+    background-color: #ffbb00;
+}
+
+form {
+    width: 50%;
+}
+
+form input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #f5f0e6;
+}
+
+#contact .btn {
+    background-color: #fcd008;
+    color: #fff;
+    cursor: pointer;
+}
+
+#contact .btn:hover {
+    background-color: #383848;
+}
+
+/* contact end */
+/* footer start */
+
+#footer {
+    background-color: #383848;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#footer a {
+    color: #fff; 
+    font-size: 15px;
+}
+
+/* footer end */
+
+/* منوی همبرگری برای دسکتاپ و موبایل */
+
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
+/* مخفی‌کردن چک‌باکس */
+#menu-toggle {
+    display: none;
+}
+
+/* دکمه همبرگری */
+.hamburger {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 100000;   /* تغییر: بالاتر از منو و کل صفحه */
+
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    cursor: pointer;
+    background: #8b0000;
+    border-radius: 8px;
+}
+
+/* خطوط دکمه */
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 5px;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* پنل منو؛ در حالت بسته خارج از صفحه است */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    z-index: 99999;    /* تغییر: بالای متن/عکس هدر */
+
+    width: 250px;
+    height: 100vh;
+    height: 100dvh;    /* اضافه: موبایل بهتر */
+    padding-top: 90px;
+
+    /* تغییر: بک‌گراند مات و اجباری تا چیزی از زیر نزند */
+    background-color: #333 !important;
+    background-image: none !important;
+    opacity: 1 !important;
+
+    box-shadow: -5px 0 18px rgba(0, 0, 0, 0.2);
+
+    transition: right 0.4s ease-in-out;
+
+    /* اضافه: لایه جدا تا زیر متن هدر نرود */
+    isolation: isolate;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow-y: auto;
+}
+
+/* بازشدن منو */
+#menu-toggle:checked ~ .nav-menu {
+    right: 0;
+}
+
+/* لیست عمودی */
+.nav-menu ul {
+    position: relative; /* اضافه */
+    z-index: 1;         /* اضافه: لینک‌ها روی بک‌گراند منو */
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu li {
+    width: 100%;
+    position: relative; /* اضافه */
+    z-index: 1;         /* اضافه */
+}
+
+.nav-menu a {
+    display: block;
+    width: 100%;
+    padding: 16px 22px;
+
+    position: relative; /* اضافه */
+    z-index: 1;         /* اضافه */
+
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background: transparent !important;
+    color: #fff !important; /* یا همان رنگ عادی لینک */
+}
+
+/* تبدیل همبرگر به ضربدر */
+#menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* جلوگیری از باقی‌ماندن استایل منوی افقی قبلی */
+#navbar > nav ul,
+#navbar .nav-menu ul {
+    flex-direction: column !important;
+}
+/* Responsive */
+
+/* Responsive tablet */
+@media (max-width:1000px) {
+
+        /* تنظیمات خاص موبایل */
+        .hamburger {
+            width: 35px; /* کمی کوچک‌تر برای موبایل */
+            height: 35px;
+            right: 15px; /* نزدیک‌تر به لبه */
+        }
+        
+        .nav-menu {
+            width: 200px; /* منوی باریک‌تر برای صفحه موبایل */
+            right: -200px; /* هماهنگ با عرض جدید */
+        }
+
+    #navbar img {
+        margin-left: 20px;
+    }
+
+    #navbar ul {
+        margin-right: 20px;
+    }
+
+    #navbar ul li a {
+        padding: 10px;
+    }
+
+    header .content h1 {
+        font-size:26px;
+    }    
+
+    #About {
+        height: auto;
+        padding: 4rem 2rem ;
+    }
+
+    #About h2 {
+        margin-top: -2rem;
+    }
+    #About .title p {
+        margin-top: -15px;
+    }
+    #About .about-content p {
+        margin-right: 2rem;
+    }
+
+    #About .about-content img {
+        width: 220px;
+    }
+
+    #offers .offers-items img {
+        width: 160px;
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    #menu .menu-items  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+
+    #contact .contact-content {
+        flex-direction: column;
+    }
+    
+    @media (max-width: 600px) {
+        header .content h1 {
+            font-size: 18px;
+        }
+
+        header .content p {
+            font-size: 14px;
+            max-width: 600px;
+            text-align: center;
+            direction: rtl;
+            line-height: 2;
+            word-spacing: 1px;
+        }
+
+        #About .about-content p {
+            flex-direction: column;
+        }
+
+        #About .about-content img {
+            display: none;
+        }
+
+        #About .about-content a {
+            margin-top: 2 rem;
+        }
+
+        #offers {
+            height: auto;
+            padding: 30px 10px;
+        }
+
+        #offers h2{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #offers .title p {
+            margin-bottom: 10px;
+        }
+
+        #offers .offers-items {
+            flex-direction: column;
+            margin-top: -2rem;
+        }
+
+        #menu .menu-items {
+            display: block;
+        }
+
+        #daytime .daytime-items {
+            display: block;
+            height: auto;
+            padding: 30px 0;
+            
+        }
+        #daytime .daytime-items .daytime-item {
+            margin-top: 10px;
+        }
+
+        #gallery {
+            height: auto;
+            padding: 8rem 0 6rem;
+        }
+        #gallery .gallery-img {
+            display: block;
+            margin:auto;
+        } 
+
+        #contact .contact-content .contact-info, form {
+            width: 80%;
+        }
+    }
+
+
+}
